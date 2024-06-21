@@ -3,3 +3,8 @@
     text-align: center;
     padding: 20px;
 }
+.product-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

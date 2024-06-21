@@ -5,7 +5,8 @@ import { theme } from '../../data'
 function ProductCard({name, img}) {
   return (
     <div className='product-card' style={{background: theme.cardBg}}>
-        <h1>{name}</h1>
+        <img src={img} alt={name} className='product-img'/>
+        <h1 className='product-name' style={{color: theme.heading}}>{name}</h1>
     </div>
   )
 }

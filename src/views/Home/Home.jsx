@@ -1,30 +1,32 @@
 import './Home.css'
 import Navbar from '../../component/Navbar/Navbar'
-import { siteDetails, theme, products} from '../../data'
+import { siteDetails, theme, products } from '../../data'
 import ProductCard from '../../component/ProductCard/ProductCard'
 
 function Home() {
-  return (
-    <>
-        <Navbar name={siteDetails.title}/>
-        <div className='details-container'>
-            <p style={{color: theme.subText }}>{siteDetails.description}</p>
-            {
-                products.map((product,i)=>
-                {
-                    const {name, img} = product
+    return (
+        <>
+            <Navbar name={siteDetails.title} />
+            <div className='details-container'>
+                <p style={{ color: theme.subText }}>{siteDetails.description}</p>
+                <div className='product-card-container'>
+                    {
+                        products.map((product, i) => {
+                            const { name, img } = product
 
-                    return (
-                        <ProductCard 
-                            name={name}
-                            img={img}
-                        />
-                    )
-                })
-            }
-        </div>
-    </>
-  )
+                            return (
+                                <ProductCard
+                                    key={i}
+                                    name={name}
+                                    img={img}
+                                />
+                            )
+                        })
+                    }
+                </div>
+            </div>
+        </>
+    )
 }
 
 export default Home
