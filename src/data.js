@@ -1,6 +1,9 @@
 const siteDetails = {
     title: "Cake Shop",
     description: "Best cake shop",
+    number : "7028112938",
+    address : "404 Pravaranagar, Above MG Road Loni Kh., Maharashtra 413712",
+    location : "https://maps.app.goo.gl/bWYK1B6tCahBVSd4A"
 }
 
 const products = [
@@ -29,7 +32,8 @@ const theme = {
     subText: "#666",
     heading: "#f00",
     navbarBg: "linear-gradient(135deg, #f34079 40%, #fc894d)",
-    navbarText: "#fff"
+    navbarText: "#fff",
+    footerBg : "#343434"
 }
 export {
     siteDetails,
