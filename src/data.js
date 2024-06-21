@@ -2,6 +2,7 @@ const siteDetails = {
     title: "Cake Shop",
     description: "Best cake shop",
     number : "7028112938",
+    email : "prajyot123@gmail.com",
     address : "404 Pravaranagar, Above MG Road Loni Kh., Maharashtra 413712",
     location : "https://maps.app.goo.gl/bWYK1B6tCahBVSd4A"
 }
