@@ -2,6 +2,7 @@ import './Home.css'
 import Navbar from '../../component/Navbar/Navbar'
 import { siteDetails, theme, products } from '../../data'
 import ProductCard from '../../component/ProductCard/ProductCard'
+import Footer from '../../component/Footer/Footer'
 
 function Home() {
     return (
@@ -25,6 +26,7 @@ function Home() {
                         })
                     }
                 </div>
+                <Footer />
             </div>
         </>
     )
