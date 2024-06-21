@@ -1,8 +1,13 @@
 import './Home.css'
+import Navbar from '../../component/Navbar/Navbar'
+import { siteDetails } from '../../data'
 
 function Home() {
   return (
-    <div>Home</div>
+    <>
+        <Navbar name={siteDetails.title}/>
+        <div>{siteDetails.title}</div>
+    </>
   )
 }
 
