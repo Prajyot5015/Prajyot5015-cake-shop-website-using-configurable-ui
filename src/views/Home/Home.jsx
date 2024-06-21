@@ -12,13 +12,14 @@ function Home() {
                 <div className='product-card-container'>
                     {
                         products.map((product, i) => {
-                            const { name, img } = product
+                            const { name, img, description} = product
 
                             return (
                                 <ProductCard
                                     key={i}
                                     name={name}
                                     img={img}
+                                    description={description}
                                 />
                             )
                         })
